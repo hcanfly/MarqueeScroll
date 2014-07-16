@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E0B8D1519765EF0004B766A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B8D1419765EF0004B766A /* README.md */; };
-		3E0B8D1B197661A5004B766A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3E0B8D1A197661A5004B766A /* LICENSE */; };
+		3E0B8D2119770785004B766A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3E0B8D1E19770785004B766A /* LICENSE */; };
+		3E0B8D2219770785004B766A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B8D1F19770785004B766A /* README.md */; };
+		3E0B8D2319770785004B766A /* Screenshot.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3E0B8D2019770785004B766A /* Screenshot.PNG */; };
 		3E4F78F0195DEE5800F3219B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4F78EF195DEE5800F3219B /* AppDelegate.swift */; };
 		3E4F78F2195DEE5800F3219B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4F78F1195DEE5800F3219B /* ViewController.swift */; };
 		3E4F78F5195DEE5800F3219B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E4F78F3195DEE5800F3219B /* Main.storyboard */; };
@@ -29,8 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E0B8D1419765EF0004B766A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3E0B8D1A197661A5004B766A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3E0B8D1E19770785004B766A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3E0B8D1F19770785004B766A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3E0B8D2019770785004B766A /* Screenshot.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot.PNG; sourceTree = "<group>"; };
 		3E4F78EA195DEE5800F3219B /* MarqueeScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarqueeScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E4F78EE195DEE5800F3219B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E4F78EF195DEE5800F3219B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,9 @@
 		3E4F78EC195DEE5800F3219B /* MarqueeScroll */ = {
 			isa = PBXGroup;
 			children = (
+				3E0B8D1E19770785004B766A /* LICENSE */,
+				3E0B8D1F19770785004B766A /* README.md */,
+				3E0B8D2019770785004B766A /* Screenshot.PNG */,
 				3E7A3F6A1967A39C007BFAAD /* GSHGradientView.swift */,
 				3E7A3F6B1967A39C007BFAAD /* TextScrollView.swift */,
 				3E4F78EF195DEE5800F3219B /* AppDelegate.swift */,
@@ -97,9 +102,7 @@
 		3E4F78ED195DEE5800F3219B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E0B8D1A197661A5004B766A /* LICENSE */,
 				3E4F78EE195DEE5800F3219B /* Info.plist */,
-				3E0B8D1419765EF0004B766A /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,9 +204,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E0B8D1B197661A5004B766A /* LICENSE in Resources */,
+				3E0B8D2119770785004B766A /* LICENSE in Resources */,
 				3E4F78F5195DEE5800F3219B /* Main.storyboard in Resources */,
 				3E4F78F7195DEE5800F3219B /* Images.xcassets in Resources */,
+				3E0B8D2319770785004B766A /* Screenshot.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +227,7 @@
 			files = (
 				3E4F78F2195DEE5800F3219B /* ViewController.swift in Sources */,
 				3E4F78F0195DEE5800F3219B /* AppDelegate.swift in Sources */,
-				3E0B8D1519765EF0004B766A /* README.md in Sources */,
+				3E0B8D2219770785004B766A /* README.md in Sources */,
 				3E7A3F6D1967A39C007BFAAD /* TextScrollView.swift in Sources */,
 				3E7A3F6C1967A39C007BFAAD /* GSHGradientView.swift in Sources */,
 			);
