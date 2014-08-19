@@ -17,7 +17,7 @@ class TextScrollView: UIScrollView {
 	
 	//var fontName :String = "HelveticaNeue"
 	//var fontSize :CGFloat = 40.0
-	var	displayText :String = "Did we forget to set the text?"
+	private var	displayText :String = "Did we forget to set the text?"
 	
 
 	func commonInit() {
@@ -28,11 +28,17 @@ class TextScrollView: UIScrollView {
 		setScrollRate()
 	}
 	
-    init(frame: CGRect) {
+    override init(frame: CGRect) {
 		super.init(frame: frame)
 		
 		commonInit()
     }
+	
+	required init(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+		
+		commonInit()
+	}
 
 	
 	func scroll() {

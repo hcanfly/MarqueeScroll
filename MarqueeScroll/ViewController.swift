@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
                             
-	var scrollLabel :TextScrollView!
+	private var scrollLabel :TextScrollView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
 		return desiredBounds
 	}
 	
-	init(coder aDecoder: NSCoder!) {
+	required init(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
 }
