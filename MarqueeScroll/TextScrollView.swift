@@ -10,14 +10,14 @@ import UIKit
 
 
 let kSpaceBetweenLabels :CGFloat = 20.0
-var timeToScrollAcrossView :CGFloat = 5.2
 
 
 class TextScrollView: UIScrollView {
 	
-	//var fontName :String = "HelveticaNeue"
-	//var fontSize :CGFloat = 40.0
+	private let fontName :String = "HelveticaNeue"
+	private let fontSize :CGFloat = 36.0
 	private var	displayText :String = "Did we forget to set the text?"
+	private var timeToScrollAcrossView :CGFloat = 5.2
 	
 
 	func commonInit() {
@@ -34,7 +34,7 @@ class TextScrollView: UIScrollView {
 		commonInit()
     }
 	
-	required init(coder aDecoder: NSCoder) {
+	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 		
 		commonInit()
@@ -42,12 +42,12 @@ class TextScrollView: UIScrollView {
 
 	
 	func scroll() {
-		let label :UILabel = subviews[0] as UILabel
+		let label :UILabel = subviews[0] as! UILabel
 		
 		let animationDuration : NSTimeInterval = Double((label.frame.size.width / frame.size.width) * timeToScrollAcrossView)
 		let animationDelay : NSTimeInterval = 2.0
 		let newOffset :CGPoint = CGPoint(x: label.frame.size.width + kSpaceBetweenLabels, y: 0)
-		UIView.animateWithDuration(animationDuration, delay: animationDelay, options: (UIViewAnimationOptions.Repeat | UIViewAnimationOptions.BeginFromCurrentState | UIViewAnimationOptions.CurveLinear), animations: {self.contentOffset = newOffset}, completion: nil)
+		UIView.animateWithDuration(animationDuration, delay: animationDelay, options: ([UIViewAnimationOptions.Repeat, UIViewAnimationOptions.BeginFromCurrentState, UIViewAnimationOptions.CurveLinear]), animations: {self.contentOffset = newOffset}, completion: nil)
 	}
 
 	func setText(text:String) {
@@ -91,11 +91,10 @@ class TextScrollView: UIScrollView {
 	
 	func createLabel() -> UILabel {
 		
-		var label = UILabel()
+		let label = UILabel()
 		
 		label.text = displayText
-		label.font = UIFont.systemFontOfSize(48)
-		//label.font = UIFont(name: fontName, size: fontSize)
+		label.font = UIFont(name: fontName, size: fontSize)
 		label.textColor = UIColor.whiteColor()
 		label.backgroundColor = UIColor.clearColor()
 		label.sizeToFit()
@@ -106,15 +105,6 @@ class TextScrollView: UIScrollView {
 		
 		return label
 	}
-	
-	/*
-	func setFontFamily(newFontFamily:String, newFontSize:Float) {
-		
-		fontFamily = newFontFamily
-		fontSize = newFontSize
-		
-	}
-	*/
 	
 	func setScrollRate() {
 		if (frame.size.width > 700) {
