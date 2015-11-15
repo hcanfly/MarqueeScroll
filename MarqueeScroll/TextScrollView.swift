@@ -62,9 +62,9 @@ class TextScrollView: UIScrollView {
 		
 		addSubview(label)
 		
-		setContentOffset(CGPoint.zeroPoint, animated: true)
+		setContentOffset(CGPoint.zero, animated: true)
 		
-		var size = CGSize.zeroSize
+		var size = CGSize.zero
 		
 		size.width = label.frame.size.width + frame.size.width + kSpaceBetweenLabels
 		size.height = frame.size.height
