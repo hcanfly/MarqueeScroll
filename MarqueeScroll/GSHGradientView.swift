@@ -9,22 +9,26 @@
 import UIKit
 
 
-class GSHGradientView: UIView {
+final class GSHGradientView: UIView {
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
 
     override func drawRect(rect: CGRect)
     {
-		var locations :[CGFloat] = [ 0.2, 1.0 ]
-		var components :[CGFloat] = [0.0, 0.0, 0.0, 1.0,		// start color
+		var locations: [CGFloat] = [ 0.2, 1.0 ]
+		var components: [CGFloat] = [0.0, 0.0, 0.0, 1.0,		// start color
 			0.7, 0.3, 1.0, 1.0]									// end color
 		
 		let rgbColorspace = CGColorSpaceCreateDeviceRGB()
 		let glossGradient = CGGradientCreateWithColorComponents(rgbColorspace, &components, &locations, 2)
 		
-		let currentbounds = bounds
+		let currentbounds = self.bounds
 		let topCenter :CGPoint = CGPointMake(CGRectGetMidX(currentbounds), 0)
 		let midCenter :CGPoint = CGPointMake(CGRectGetMidX(currentbounds), currentbounds.size.height)
 		
@@ -32,6 +36,5 @@ class GSHGradientView: UIView {
 		CGContextDrawLinearGradient(currentContext, glossGradient, topCenter, midCenter, .DrawsAfterEndLocation)
 		
     }
-	
 
 }
