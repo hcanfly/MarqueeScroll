@@ -12,7 +12,8 @@ MarqueeScroll is a sample/test application that simply scrolls text across the s
 Instructions
 ------------
 
-You will need the Xcode 6 Developer Preview to build and run the project. Because of the universal storyboard it will probably only run on iOS 8.
+You will need the Xcode 6 Developer Preview to build and run the project. Because of the universal storyboard it will probably only run on iOS 8 and later.
+Updated to Xcode 10 and Swift 5.
 
 
 
