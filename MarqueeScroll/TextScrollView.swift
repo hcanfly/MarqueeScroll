@@ -9,14 +9,14 @@
 import UIKit
 
 
-let kSpaceBetweenLabels :CGFloat = 20.0
+let kSpaceBetweenLabels: CGFloat = 20.0
 
 
 final class TextScrollView: UIScrollView {
 	
     private let fontName = "HelveticaNeue"
     private let fontSize: CGFloat = 36.0
-    private var    displayText = "Did we forget to set the text?"
+    private var displayText = "Did we forget to set the text?"
     private var timeToScrollAcrossView: CGFloat = 5.2
     
     
@@ -41,13 +41,14 @@ final class TextScrollView: UIScrollView {
     }
     
     
-    func scroll() {
-        let label = subviews[0] as! UILabel
-        let animationDuration = TimeInterval((label.frame.size.width / self.frame.size.width) * self.timeToScrollAcrossView)
-        let animationDelay = 2.0
-        let newOffset = CGPoint(x: label.frame.size.width + kSpaceBetweenLabels, y: 0)
-        
-        UIView.animate(withDuration: animationDuration, delay: animationDelay, options: ([UIViewAnimationOptions.repeat, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.curveLinear]), animations: {self.contentOffset = newOffset}, completion: nil)
+    private func scroll() {
+        if let label = subviews[0] as? UILabel {
+            let animationDuration = TimeInterval((label.frame.size.width / self.frame.size.width) * self.timeToScrollAcrossView)
+            let animationDelay = 2.0
+            let newOffset = CGPoint(x: label.frame.size.width + kSpaceBetweenLabels, y: 0)
+            
+            UIView.animate(withDuration: animationDuration, delay: animationDelay, options: ([UIViewAnimationOptions.repeat, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.curveLinear]), animations: {self.contentOffset = newOffset}, completion: nil)
+        }
     }
     
     func setText(text: String) {
@@ -89,7 +90,7 @@ final class TextScrollView: UIScrollView {
         
     }
     
-    func createLabel() -> UILabel {
+    private func createLabel() -> UILabel {
         
         let label = UILabel()
         
@@ -106,7 +107,7 @@ final class TextScrollView: UIScrollView {
         return label
     }
     
-    func setScrollRate() {
+    private func setScrollRate() {
         if self.frame.size.width > 700 {
             self.timeToScrollAcrossView = 5.2
         } else {
