@@ -12,7 +12,8 @@ MarqueeScroll is a sample/test application that simply scrolls text across the s
 Instructions
 ------------
 
-Built with Xcode 9 and Swift 4. Requires iOS 8, but should really run on older versions as well.
+Requires iOS 8, but should really run on older versions as well.
+Updated for Xcode 10 and Swift 5. Really no changes for that, but did very minor cleanup on stuff that I'd missed.
 
 
 
