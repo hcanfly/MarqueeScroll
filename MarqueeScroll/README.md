@@ -6,7 +6,7 @@ MarqueeScroll is a sample/test application that simply scrolls text across the s
 
 
 ![Screenshot]
-(/Screenshot.PNG?raw=true)
+(Screenshot.PNG?raw=true)
 
 
 Instructions
