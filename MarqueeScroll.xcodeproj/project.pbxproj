@@ -18,16 +18,6 @@
 		3E7A3F6D1967A39C007BFAAD /* TextScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A3F6B1967A39C007BFAAD /* TextScrollView.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3E4F78FD195DEE5800F3219B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3E4F78E2195DEE5800F3219B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3E4F78E9195DEE5800F3219B;
-			remoteInfo = MarqueeScroll;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		3E0B8D1E19770785004B766A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3E0B8D1F19770785004B766A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -38,20 +28,12 @@
 		3E4F78F1195DEE5800F3219B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3E4F78F4195DEE5800F3219B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E4F78F6195DEE5800F3219B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3E4F78FC195DEE5800F3219B /* MarqueeScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarqueeScrollTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E7A3F6A1967A39C007BFAAD /* GSHGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSHGradientView.swift; sourceTree = "<group>"; };
 		3E7A3F6B1967A39C007BFAAD /* TextScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E4F78E7195DEE5800F3219B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E4F78F9195DEE5800F3219B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				3E4F78EA195DEE5800F3219B /* MarqueeScroll.app */,
-				3E4F78FC195DEE5800F3219B /* MarqueeScrollTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,24 +104,6 @@
 			productReference = 3E4F78EA195DEE5800F3219B /* MarqueeScroll.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3E4F78FB195DEE5800F3219B /* MarqueeScrollTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3E4F7909195DEE5800F3219B /* Build configuration list for PBXNativeTarget "MarqueeScrollTests" */;
-			buildPhases = (
-				3E4F78F8195DEE5800F3219B /* Sources */,
-				3E4F78F9195DEE5800F3219B /* Frameworks */,
-				3E4F78FA195DEE5800F3219B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3E4F78FE195DEE5800F3219B /* PBXTargetDependency */,
-			);
-			name = MarqueeScrollTests;
-			productName = MarqueeScrollTests;
-			productReference = 3E4F78FC195DEE5800F3219B /* MarqueeScrollTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,15 +111,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = Gary.com;
 				TargetAttributes = {
 					3E4F78E9195DEE5800F3219B = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					3E4F78FB195DEE5800F3219B = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 3E4F78E9195DEE5800F3219B;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -165,6 +125,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -174,7 +135,6 @@
 			projectRoot = "";
 			targets = (
 				3E4F78E9195DEE5800F3219B /* MarqueeScroll */,
-				3E4F78FB195DEE5800F3219B /* MarqueeScrollTests */,
 			);
 		};
 /* End PBXProject section */
@@ -188,13 +148,6 @@
 				3E4F78F5195DEE5800F3219B /* Main.storyboard in Resources */,
 				3E4F78F7195DEE5800F3219B /* Images.xcassets in Resources */,
 				3E0B8D2319770785004B766A /* Screenshot.PNG in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3E4F78FA195DEE5800F3219B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,22 +166,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E4F78F8195DEE5800F3219B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3E4F78FE195DEE5800F3219B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3E4F78E9195DEE5800F3219B /* MarqueeScroll */;
-			targetProxy = 3E4F78FD195DEE5800F3219B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3E4F78F3195DEE5800F3219B /* Main.storyboard */ = {
@@ -246,6 +184,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -254,12 +193,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -300,6 +241,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -308,12 +250,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -353,6 +297,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.garyhanson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -366,42 +311,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.garyhanson.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		3E4F790A195DEE5800F3219B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MarqueeScroll.app/MarqueeScroll";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MarqueeScrollTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		3E4F790B195DEE5800F3219B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MarqueeScroll.app/MarqueeScroll";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MarqueeScrollTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -422,15 +332,6 @@
 			buildConfigurations = (
 				3E4F7907195DEE5800F3219B /* Debug */,
 				3E4F7908195DEE5800F3219B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3E4F7909195DEE5800F3219B /* Build configuration list for PBXNativeTarget "MarqueeScrollTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3E4F790A195DEE5800F3219B /* Debug */,
-				3E4F790B195DEE5800F3219B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -47,7 +47,7 @@ final class TextScrollView: UIScrollView {
             let animationDelay = 2.0
             let newOffset = CGPoint(x: label.frame.size.width + kSpaceBetweenLabels, y: 0)
             
-            UIView.animate(withDuration: animationDuration, delay: animationDelay, options: ([UIViewAnimationOptions.repeat, UIViewAnimationOptions.beginFromCurrentState, UIViewAnimationOptions.curveLinear]), animations: {self.contentOffset = newOffset}, completion: nil)
+            UIView.animate(withDuration: animationDuration, delay: animationDelay, options: ([UIView.AnimationOptions.repeat, UIView.AnimationOptions.beginFromCurrentState, UIView.AnimationOptions.curveLinear]), animations: {self.contentOffset = newOffset}, completion: nil)
         }
     }
     
